@@ -11,7 +11,7 @@ Requires:           zimbra-aspell-es >= 1.11.2-1zimbra8.7b2ZAPPEND, zimbra-aspel
 Requires:           zimbra-aspell-hi >= 0.02.0-1zimbra8.7b2ZAPPEND
 Requires:           zimbra-aspell-hu >= 0.99.4.2.0-1zimbra8.7b2ZAPPEND
 Requires:           zimbra-aspell-it >= 2.2.20050523.0-1zimbra8.7b2ZAPPEND
-Requires:           zimbra-aspell-nl >= >= 0.50.2-1zimbra8.7b2ZAPPEND
+Requires:           zimbra-aspell-nl >= 0.50.2-1zimbra8.7b2ZAPPEND
 Requires:           zimbra-aspell-pl >= 6.0.20061121.0-1zimbra8.7b2ZAPPEND
 Requires:           zimbra-aspell-pt-br >= 20090702.0-1zimbra8.7b2ZAPPEND
 Requires:           zimbra-aspell-ru >= 0.99f7.1-1zimbra8.7b2ZAPPEND, zimbra-aspell-sv >= 0.51.0-1zimbra8.7b2ZAPPEND
