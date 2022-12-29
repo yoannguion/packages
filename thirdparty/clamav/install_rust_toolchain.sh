@@ -11,7 +11,7 @@ install_rust() {
 	if [[ "$is_rust_install" == 1 ]]; then
 		echo "Rust toolchain not found"
 		echo "Installaing Rust toolchain...."
-		curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+		curl --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 		if [ $? -eq 0 ]; then
 			echo "Rust toolchain installed"
 			source $HOME/.cargo/env
