@@ -6,7 +6,7 @@ pvers := $(HEIMDAL_VERSION)
 pname := heimdal
 pfile := $(pname)-$(pvers).tar.gz
 psrc_file := $(SRC_DIR)/$(pfile)
-purl := https://ftp.gwdg.de/pub/misc/heimdal/src/$(pfile)
+purl := file://$(PKG_ROOT)/$(pfile)
 zname := zimbra-$(pname)
 zspec := $(pname).spec
 
@@ -17,10 +17,11 @@ all: clean getsrc build pkgrm1
 # $(@D) == directory part of the target
 getsrc: $(psrc_file)
 $(psrc_file):
-	$(MKDIR) $(@D) && $(CD) $(@D) && $(WGET) $(purl)
+	$(MKDIR) $(@D) && $(CD) $(@D) && curl -s -k $(purl) -o $(pfile)
 
 pkgadd:
-	$(PKG_EXTRACT) zimbra-base zimbra-openssl-$(PKG_DEV)
+	$(PKG_EXTRACT) zimbra-base
+#	 zimbra-openssl-$(PKG_DEV)
 
 pkgrm: pkgrm%
 
